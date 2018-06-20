@@ -54,7 +54,7 @@ public class RequestMappingInfoTests {
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 
-	// TODO: CORS pre-flight (see @Ignore)
+	// SPRING-TO-DO: CORS pre-flight (see @Ignore)
 
 
 	@Test

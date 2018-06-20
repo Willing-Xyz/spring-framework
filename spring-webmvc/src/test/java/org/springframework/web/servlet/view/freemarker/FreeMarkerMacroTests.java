@@ -221,7 +221,7 @@ public class FreeMarkerMacroTests {
 		assertEquals("<textarea id=\"name\" name=\"name\" rows=10 cols=30>\nDarren</textarea>", getMacroOutput("FORM4"));
 	}
 
-	// TODO verify remaining output (fix whitespace)
+	// SPRING-TO-DO verify remaining output (fix whitespace)
 
 	@Test
 	public void testForm9() throws Exception {

@@ -69,7 +69,7 @@ public class HttpWebHandlerAdapter extends WebHandlerDecorator implements HttpHa
 	 * Tomcat: ClientAbortException or EOFException
 	 * Jetty: EofException
 	 * WildFly, GlassFish: java.io.IOException "Broken pipe" (already covered)
-	 * <p>TODO:
+	 * <p>SPRING-TO-DO:
 	 * This definition is currently duplicated between HttpWebHandlerAdapter
 	 * and AbstractSockJsSession. It is a candidate for a common utility class.
 	 * @see #isDisconnectedClientError(Throwable)

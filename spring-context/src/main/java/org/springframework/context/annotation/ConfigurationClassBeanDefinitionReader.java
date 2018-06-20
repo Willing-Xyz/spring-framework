@@ -348,7 +348,7 @@ class ConfigurationClassBeanDefinitionReader {
 				}
 			}
 
-			// TODO SPR-6310: qualify relative path locations as done in AbstractContextLoader.modifyLocations
+			// SPRING-TO-DO SPR-6310: qualify relative path locations as done in AbstractContextLoader.modifyLocations
 			reader.loadBeanDefinitions(resource);
 		});
 	}

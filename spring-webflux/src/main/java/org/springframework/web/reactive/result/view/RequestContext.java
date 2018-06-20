@@ -96,7 +96,7 @@ public class RequestContext {
 				((TimeZoneAwareLocaleContext) localeContext).getTimeZone() : null);
 		this.timeZone = (timeZone != null ? timeZone : TimeZone.getDefault());
 
-		this.defaultHtmlEscape = null;  // TODO
+		this.defaultHtmlEscape = null;  // SPRING-TO-DO
 		this.dataValueProcessor = dataValueProcessor;
 	}
 
@@ -153,7 +153,7 @@ public class RequestContext {
 	/**
 	 * (De)activate default HTML escaping for messages and errors, for the scope
 	 * of this RequestContext.
-	 * <p>TODO: currently no application-wide setting ...
+	 * <p>SPRING-TO-DO: currently no application-wide setting ...
 	 */
 	public void setDefaultHtmlEscape(boolean defaultHtmlEscape) {
 		this.defaultHtmlEscape = defaultHtmlEscape;

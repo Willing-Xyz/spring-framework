@@ -84,7 +84,7 @@ public class FlushingIntegrationTests extends AbstractHttpHandlerIntegrationTest
 		catch (AssertionError err) {
 			String os = System.getProperty("os.name").toLowerCase();
 			if (os.contains("windows") && err.getMessage().startsWith("VerifySubscriber timed out")) {
-				// TODO: Reactor usually times out on Windows ...
+				// SPRING-TO-DO: Reactor usually times out on Windows ...
 				err.printStackTrace();
 				return;
 			}

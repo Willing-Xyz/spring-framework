@@ -302,7 +302,7 @@ public class ModelAttributeMethodArgumentResolverTests {
 		assertTrue(map.get(bindingResultKey) instanceof BindingResult);
 	}
 
-	// TODO: SPR-15871, SPR-15542
+	// SPRING-TO-DO: SPR-15871, SPR-15542
 
 
 	private ModelAttributeMethodArgumentResolver createResolver() {

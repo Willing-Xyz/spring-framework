@@ -721,7 +721,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 
 	/**
 	 * Eat an identifier, possibly qualified (meaning that it is dotted).
-	 * TODO AndyC Could create complete identifiers (a.b.c) here rather than a sequence of them? (a, b, c)
+	 * SPRING-TO-DO AndyC Could create complete identifiers (a.b.c) here rather than a sequence of them? (a, b, c)
 	 */
 	private SpelNodeImpl eatPossiblyQualifiedId() {
 		LinkedList<SpelNodeImpl> qualifiedIdPieces = new LinkedList<>();
@@ -771,7 +771,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 			// method reference
 			push(new MethodReference(nullSafeNavigation, methodOrPropertyName.stringValue(),
 					toPos(methodOrPropertyName), args));
-			// TODO what is the end position for a method reference? the name or the last arg?
+			// SPRING-TO-DO what is the end position for a method reference? the name or the last arg?
 			return true;
 		}
 		return false;
@@ -812,7 +812,7 @@ class InternalSpelExpressionParser extends TemplateAwareExpressionParser {
 			else {
 				// regular constructor invocation
 				eatConstructorArgs(nodes);
-				// TODO correct end position?
+				// SPRING-TO-DO correct end position?
 				push(new ConstructorReference(toPos(newToken), nodes.toArray(new SpelNodeImpl[0])));
 			}
 			return true;

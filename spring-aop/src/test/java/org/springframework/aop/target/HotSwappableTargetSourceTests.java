@@ -93,7 +93,7 @@ public class HotSwappableTargetSourceTests {
 		Object old = swapper.swap(target2);
 		assertEquals("Correct old target was returned", target1, old);
 
-		// TODO should be able to make this assertion: need to fix target handling
+		// SPRING-TO-DO should be able to make this assertion: need to fix target handling
 		// in AdvisedSupport
 		//assertEquals(target2, ((Advised) proxied).getTarget());
 
@@ -135,7 +135,7 @@ public class HotSwappableTargetSourceTests {
 		assertTrue(ex.getMessage().indexOf("null") != -1);
 	}
 
-	// TODO test reject swap to wrong interface or class?
+	// SPRING-TO-DO test reject swap to wrong interface or class?
 	// how to decide what's valid?
 
 

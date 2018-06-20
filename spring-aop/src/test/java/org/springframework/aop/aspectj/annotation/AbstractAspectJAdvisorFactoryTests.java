@@ -427,7 +427,7 @@ public abstract class AbstractAspectJAdvisorFactoryTests {
 		lockable.locked();
 	}
 
-	// TODO: Why does this test fail? It hasn't been run before, so it maybe never actually passed...
+	// SPRING-TO-DO: Why does this test fail? It hasn't been run before, so it maybe never actually passed...
 	@Test
 	@Ignore
 	public void testIntroductionWithArgumentBinding() {
@@ -486,7 +486,7 @@ public abstract class AbstractAspectJAdvisorFactoryTests {
 		}
 	}
 
-	// TODO document this behaviour.
+	// SPRING-TO-DO document this behaviour.
 	// Is it different AspectJ behaviour, at least for checked exceptions?
 	@Test
 	public void testAspectMethodThrowsExceptionIllegalOnSignature() {

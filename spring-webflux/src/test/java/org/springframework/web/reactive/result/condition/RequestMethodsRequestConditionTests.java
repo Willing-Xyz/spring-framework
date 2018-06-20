@@ -39,7 +39,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
  */
 public class RequestMethodsRequestConditionTests {
 
-	// TODO: custom method, CORS pre-flight (see @Ignored)
+	// SPRING-TO-DO: custom method, CORS pre-flight (see @Ignored)
 
 	@Test
 	public void getMatchingCondition() throws Exception {

@@ -682,7 +682,7 @@ public class UriComponentsBuilderTests {
 		UriComponents uriComponents = UriComponentsBuilder.fromUriString("http://example.com/foo?bar").build();
 		assertThat(uriComponents.toUriString(), equalTo("http://example.com/foo?bar"));
 
-		// TODO [SPR-13537] Change equalTo(null) to equalTo("").
+		// SPRING-TO-DO [SPR-13537] Change equalTo(null) to equalTo("").
 		assertThat(uriComponents.getQueryParams().get("bar").get(0), equalTo(null));
 	}
 

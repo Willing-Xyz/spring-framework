@@ -179,7 +179,7 @@ public class SpelCompiler implements Opcodes {
 		cf.finish();
 
 		byte[] data = cw.toByteArray();
-		// TODO need to make this conditionally occur based on a debug flag
+		// SPRING-TO-DO need to make this conditionally occur based on a debug flag
 		// dump(expressionToCompile.toStringAST(), clazzName, data);
 		return loadClass(clazzName.replaceAll("/", "."), data);
 	}

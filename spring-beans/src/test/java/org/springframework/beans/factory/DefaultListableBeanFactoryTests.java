@@ -2320,7 +2320,7 @@ public class DefaultListableBeanFactoryTests {
 	 */
 
 	@Test
-	@Ignore  // TODO re-enable when ConstructorResolver TODO sorted out
+	@Ignore  // SPRING-TO-DO re-enable when ConstructorResolver SPRING-TO-DO sorted out
 	public void testPrototypeCreationWithConstructorArgumentsIsFastEnough() {
 		Assume.group(TestGroup.PERFORMANCE);
 		Assume.notLogging(factoryLog);

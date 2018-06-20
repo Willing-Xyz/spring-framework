@@ -92,7 +92,7 @@ public class EnableTransactionManagementIntegrationTests {
 		assertTxProxying(ctx);
 	}
 
-	@Ignore @Test // TODO SPR-8207
+	@Ignore @Test // SPRING-TO-DO SPR-8207
 	public void repositoryIsTxProxy_withNonConventionalTxManagerName_fallsBackToByTypeLookup() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 		ctx.register(Config.class, NonConventionalTxManagerNameConfig.class);

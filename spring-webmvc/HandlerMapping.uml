@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.servlet.HandlerMapping</OriginalElement>
+  <nodes>
+    <node x="554.625" y="240.0">org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping</node>
+    <node x="205.71875" y="320.0">org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping</node>
+    <node x="321.27083333333337" y="0.0">org.springframework.web.servlet.HandlerMapping</node>
+    <node x="57.71875" y="80.0">org.springframework.web.servlet.handler.MatchableHandlerMapping</node>
+    <node x="453.71875" y="320.0">org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping</node>
+    <node x="160.71875" y="160.0">org.springframework.web.servlet.handler.AbstractUrlHandlerMapping</node>
+    <node x="569.125" y="160.0">org.springframework.web.servlet.handler.AbstractHandlerMethodMapping</node>
+    <node x="236.875" y="240.0">org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping</node>
+    <node x="13.875" y="240.0">org.springframework.web.servlet.handler.SimpleUrlHandlerMapping</node>
+    <node x="408.02083333333337" y="80.0">org.springframework.web.servlet.handler.AbstractHandlerMapping</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" target="org.springframework.web.servlet.handler.MatchableHandlerMapping">
+      <point x="-61.75" y="-15.0" />
+      <point x="515.46875" y="290.0" />
+      <point x="0.0" y="290.0" />
+      <point x="0.0" y="135.0" />
+      <point x="109.71875" y="135.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping" target="org.springframework.web.servlet.handler.AbstractUrlHandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="115.375" y="215.0" />
+      <point x="213.71875" y="215.0" />
+      <point x="-53.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractUrlHandlerMapping" target="org.springframework.web.servlet.handler.AbstractHandlerMapping">
+      <point x="53.0" y="-15.0" />
+      <point x="319.71875" y="135.0" />
+      <point x="456.77083333333337" y="135.0" />
+      <point x="-48.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMapping" target="org.springframework.web.servlet.HandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="505.52083333333337" y="55.0" />
+      <point x="431.52083333333337" y="55.0" />
+      <point x="36.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.MatchableHandlerMapping" target="org.springframework.web.servlet.HandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="161.71875" y="55.0" />
+      <point x="358.02083333333337" y="55.0" />
+      <point x="-36.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" target="org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping">
+      <point x="61.75" y="-15.0" />
+      <point x="638.96875" y="300.0" />
+      <point x="689.625" y="300.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping" target="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping" target="org.springframework.web.servlet.handler.AbstractUrlHandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="370.375" y="215.0" />
+      <point x="319.71875" y="215.0" />
+      <point x="53.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping" target="org.springframework.web.servlet.handler.AbstractHandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="689.625" y="135.0" />
+      <point x="554.2708333333334" y="135.0" />
+      <point x="48.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" target="org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping">
+      <point x="0.0" y="-15.0" />
+      <point x="319.71875" y="300.0" />
+      <point x="370.375" y="300.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractUrlHandlerMapping" target="org.springframework.web.servlet.handler.MatchableHandlerMapping">
+      <point x="-53.0" y="-15.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="402.5" y="98.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

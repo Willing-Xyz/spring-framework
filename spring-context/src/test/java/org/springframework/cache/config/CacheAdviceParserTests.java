@@ -37,7 +37,7 @@ public class CacheAdviceParserTests {
 			fail("Should have failed to load context, one advise define both a key and a key generator");
 		}
 		catch (BeanDefinitionStoreException ex) {
-			// TODO better exception handling
+			// SPRING-TO-DO better exception handling
 		}
 	}
 

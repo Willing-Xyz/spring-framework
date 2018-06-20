@@ -100,7 +100,7 @@ public class PathVariableMethodArgumentResolver extends AbstractNamedValueSyncAr
 	protected void handleResolvedValue(
 			@Nullable Object arg, String name, MethodParameter parameter, Model model, ServerWebExchange exchange) {
 
-		// TODO: View.PATH_VARIABLES ?
+		// SPRING-TO-DO: View.PATH_VARIABLES ?
 	}
 
 

@@ -76,7 +76,7 @@ public class ApplicationManagedEntityManagerIntegrationTests extends AbstractEnt
 			// expected
 		}
 
-		// TODO following lines are a workaround for Hibernate bug
+		// SPRING-TO-DO following lines are a workaround for Hibernate bug
 		// If Hibernate throws an exception due to flush(),
 		// it actually HAS flushed, meaning that the database
 		// was updated outside the transaction

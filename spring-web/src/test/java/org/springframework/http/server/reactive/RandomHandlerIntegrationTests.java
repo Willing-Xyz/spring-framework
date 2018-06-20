@@ -54,7 +54,7 @@ public class RandomHandlerIntegrationTests extends AbstractHttpHandlerIntegratio
 
 	@Test
 	public void random() throws Throwable {
-		// TODO: fix Reactor support
+		// SPRING-TO-DO: fix Reactor support
 
 		RestTemplate restTemplate = new RestTemplate();
 

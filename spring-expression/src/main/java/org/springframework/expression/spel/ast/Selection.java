@@ -80,7 +80,7 @@ public class Selection extends SpelNodeImpl {
 
 		if (operand instanceof Map) {
 			Map<?, ?> mapdata = (Map<?, ?>) operand;
-			// TODO don't lose generic info for the new map
+			// SPRING-TO-DO don't lose generic info for the new map
 			Map<Object, Object> result = new HashMap<>();
 			Object lastKey = null;
 

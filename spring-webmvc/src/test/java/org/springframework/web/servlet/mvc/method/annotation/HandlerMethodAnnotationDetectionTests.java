@@ -79,7 +79,7 @@ public class HandlerMethodAnnotationDetectionTests {
 			{ ParameterizedSubclassOverridesDefaultMappings.class, true }, // CGLib proxy
 			{ ParameterizedSubclassOverridesDefaultMappings.class, false },
 
-			// TODO [SPR-9517] Enable ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass test cases
+			// SPRING-TO-DO [SPR-9517] Enable ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass test cases
 			// { ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass.class, true }, // CGLib proxy
 			// { ParameterizedSubclassDoesNotOverrideConcreteImplementationsFromGenericAbstractSuperclass.class, false },
 

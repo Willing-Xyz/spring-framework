@@ -39,7 +39,7 @@ public class TimedTransactionalTestNGSpringContextTests extends AbstractTransact
 		assertInTransaction(true);
 	}
 
-	// TODO Enable TestNG test with timeout once we have a solution.
+	// SPRING-TO-DO Enable TestNG test with timeout once we have a solution.
 	@Test(timeOut = 10000, enabled = false)
 	public void testWithTimeout() {
 		assertInTransaction(true);

@@ -52,7 +52,7 @@ public class AsyncIntegrationTests extends AbstractHttpHandlerIntegrationTests {
 	}
 
 	@Test
-	@Ignore  // TODO: fragile due to socket failures
+	@Ignore  // SPRING-TO-DO: fragile due to socket failures
 	public void basicTest() throws Exception {
 		URI url = new URI("http://localhost:" + port);
 		ResponseEntity<String> response = new RestTemplate().exchange(

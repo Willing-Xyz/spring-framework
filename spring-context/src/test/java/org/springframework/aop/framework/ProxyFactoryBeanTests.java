@@ -482,7 +482,7 @@ public class ProxyFactoryBeanTests {
 	}
 
 	// These two fail the whole bean factory
-	// TODO put in sep file to check quality of error message
+	// SPRING-TO-DO put in sep file to check quality of error message
 	/*
 	@Test
 	public void testNoInterceptorNamesWithoutTarget() {

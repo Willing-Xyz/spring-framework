@@ -173,7 +173,7 @@ public class LocalStatelessSessionProxyFactoryBeanTests {
 			fail("Should have failed to create EJB");
 		}
 		catch (IllegalArgumentException ex) {
-			// TODO more appropriate exception?
+			// SPRING-TO-DO more appropriate exception?
 			assertTrue(ex.getMessage().indexOf("businessInterface") != 1);
 		}
 

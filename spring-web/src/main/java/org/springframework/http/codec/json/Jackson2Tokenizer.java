@@ -54,7 +54,7 @@ class Jackson2Tokenizer {
 
 	private int arrayDepth;
 
-	// TODO: change to ByteBufferFeeder when supported by Jackson
+	// SPRING-TO-DO: change to ByteBufferFeeder when supported by Jackson
 	private final ByteArrayFeeder inputFeeder;
 
 

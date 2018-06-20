@@ -125,7 +125,7 @@ public class SimpleRemoteStatelessSessionProxyFactoryBeanTests extends SimpleRem
 
 		MyEjb myEjb = mock(MyEjb.class);
 		given(myEjb.getValue()).willThrow(rex);
-		// TODO might want to control this behaviour...
+		// SPRING-TO-DO might want to control this behaviour...
 		// Do we really want to call remove after a remote exception?
 
 		final MyHome home = mock(MyHome.class);
@@ -270,7 +270,7 @@ public class SimpleRemoteStatelessSessionProxyFactoryBeanTests extends SimpleRem
 			fail("Should have failed to create EJB");
 		}
 		catch (IllegalArgumentException ex) {
-			// TODO more appropriate exception?
+			// SPRING-TO-DO more appropriate exception?
 			assertTrue(ex.getMessage().indexOf("businessInterface") != 1);
 		}
 

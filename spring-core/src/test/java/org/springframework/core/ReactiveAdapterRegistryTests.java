@@ -98,7 +98,7 @@ public class ReactiveAdapterRegistryTests {
 		assertEquals(sequence, ((Flux<Integer>) target).collectList().block(Duration.ofMillis(1000)));
 	}
 
-	// TODO: publisherToMono/CompletableFuture vs Single (ISE on multiple elements)?
+	// SPRING-TO-DO: publisherToMono/CompletableFuture vs Single (ISE on multiple elements)?
 
 	@Test
 	public void publisherToMono() {

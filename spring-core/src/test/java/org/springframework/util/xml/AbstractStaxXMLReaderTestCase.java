@@ -155,7 +155,7 @@ public abstract class AbstractStaxXMLReaderTestCase {
 		staxXmlReader.setProperty("http://xml.org/sax/properties/lexical-handler", actualLexicalHandler);
 		staxXmlReader.parse(new InputSource());
 
-		// TODO: broken comparison since Mockito 2.2 upgrade
+		// SPRING-TO-DO: broken comparison since Mockito 2.2 upgrade
 		// verifyIdenticalInvocations(expectedLexicalHandler, actualLexicalHandler);
 	}
 
