@@ -54,6 +54,23 @@ import org.springframework.web.util.UrlPathHelper;
  * {@link #PATH_WITHIN_HANDLER_MAPPING_ATTRIBUTE}. Support for this attribute
  * is up to concrete subclasses, typically based on request URL mappings.
  *
+ * 1. 初始化interceptors。
+ * 	1.1 提供extendInterceptors模板方法便于让子类增加interceptors
+ * 	1.2 获取容器中所有MappedInterceptor类型的bean
+ * 	1.3 组合第一步和第二步的interceptors，并适配WebRequestInterceptor类型的interceptor
+ *
+ * 	2. getHandler
+ * 	 2.1 提供getHandlerInternal模板方法
+ * 	 2.2 如果返回handler为null，使用defaultHandler，defaultHandler也可能为空.如果handler为String类型，表示它是beanName，通过它获取真正的handler
+ * 	 2.3 如果handler不为空，把interceptor和handler组合成HandlerExecutionChain,对于MappedInterceptor类型，会根据url进行过滤
+ * 	 2.4 进行cors配置
+ * 	  2.4.1 获取UrlBasedCorsConfigurationSource
+ * 	  2.4.2 如果Handler实现了CorsConfigurationSource接口，则从该Handler中获取request对应的CorsConfiguration
+ * 	  2.4.3 合并第一步和第二部的CorsConfiguration
+ * 	  2.4.5 在2.3基础上的HandlerExecutionChain添加cors执行逻辑
+ * 	   2.4.5.1 如果是preflight请求，增加HttpRequestHandler实现，该实现会执行CorsProcessor的processRequest方法
+ * 	   2.4.5.2 如果不是preflight请求，增加Interceptor实现，该实现会在preHandle中执行CorsProcessor的processRequest方法
+ *
  * @author Juergen Hoeller
  * @author Rossen Stoyanchev
  * @since 07.04.2003

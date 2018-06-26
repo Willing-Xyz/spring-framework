@@ -34,6 +34,8 @@ import org.springframework.web.util.UrlPathHelper;
  * <p>Exact path mapping URIs (such as {@code "/admin"}) are supported
  * as well as Ant-style path patterns (such as {@code "/admin/**"}).
  *
+ * 根据url 到 CorsConfiguration 的 map进行匹配，支持ant通配符
+ *
  * @author Sebastien Deleuze
  * @since 4.2
  */

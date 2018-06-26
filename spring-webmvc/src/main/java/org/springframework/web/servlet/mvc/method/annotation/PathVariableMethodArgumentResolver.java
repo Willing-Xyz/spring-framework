@@ -57,6 +57,8 @@ import org.springframework.web.util.UriComponentsBuilder;
  * <p>A {@link WebDataBinder} is invoked to apply type conversion to resolved path variable
  * values that don't yet match the method parameter type.
  *
+ * 对于Map，它只是映射某个url占位符的值到Map类型
+ *
  * @author Rossen Stoyanchev
  * @author Arjen Poutsma
  * @author Juergen Hoeller
@@ -91,6 +93,7 @@ public class PathVariableMethodArgumentResolver extends AbstractNamedValueMethod
 	@SuppressWarnings("unchecked")
 	@Nullable
 	protected Object resolveName(String name, MethodParameter parameter, NativeWebRequest request) throws Exception {
+		// todo 谁放到Attribute里的？什么时候？
 		Map<String, String> uriTemplateVars = (Map<String, String>) request.getAttribute(
 				HandlerMapping.URI_TEMPLATE_VARIABLES_ATTRIBUTE, RequestAttributes.SCOPE_REQUEST);
 		return (uriTemplateVars != null ? uriTemplateVars.get(name) : null);
@@ -106,6 +109,7 @@ public class PathVariableMethodArgumentResolver extends AbstractNamedValueMethod
 	protected void handleResolvedValue(@Nullable Object arg, String name, MethodParameter parameter,
 			@Nullable ModelAndViewContainer mavContainer, NativeWebRequest request) {
 
+		// TODO ??
 		String key = View.PATH_VARIABLES;
 		int scope = RequestAttributes.SCOPE_REQUEST;
 		Map<String, Object> pathVars = (Map<String, Object>) request.getAttribute(key, scope);
@@ -116,6 +120,7 @@ public class PathVariableMethodArgumentResolver extends AbstractNamedValueMethod
 		pathVars.put(name, arg);
 	}
 
+	// TODO ???
 	@Override
 	public void contributeMethodArgument(MethodParameter parameter, Object value,
 			UriComponentsBuilder builder, Map<String, Object> uriVariables, ConversionService conversionService) {

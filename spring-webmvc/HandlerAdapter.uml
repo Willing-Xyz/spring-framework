@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.servlet.HandlerAdapter</OriginalElement>
+  <nodes>
+    <node x="749.0" y="80.0">org.springframework.web.servlet.handler.SimpleServletHandlerAdapter</node>
+    <node x="258.0" y="80.0">org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter</node>
+    <node x="416.75" y="0.0">org.springframework.web.servlet.HandlerAdapter</node>
+    <node x="3.0" y="80.0">org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter</node>
+    <node x="491.0" y="80.0">org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter</node>
+    <node x="0.0" y="160.0">org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter" target="org.springframework.web.servlet.HandlerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="120.5" y="50.0" />
+      <point x="434.375" y="50.0" />
+      <point x="-52.875" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" target="org.springframework.web.servlet.HandlerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="610.0" y="60.0" />
+      <point x="504.875" y="60.0" />
+      <point x="17.625" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter" target="org.springframework.web.servlet.HandlerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="364.5" y="60.0" />
+      <point x="469.625" y="60.0" />
+      <point x="-17.625" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" target="org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.SimpleServletHandlerAdapter" target="org.springframework.web.servlet.HandlerAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="858.5" y="50.0" />
+      <point x="540.125" y="50.0" />
+      <point x="52.875" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="374.5" y="15.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

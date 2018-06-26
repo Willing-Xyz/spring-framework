@@ -40,6 +40,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * The method parameter type may be a {@link MultiValueMap} to receive all
  * values for a header, not only the first one.
  *
+ * 包含请求所有的Header
+ *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
  * @since 3.1

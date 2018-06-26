@@ -700,8 +700,7 @@ public class RequestMappingHandlerAdapter extends AbstractHandlerMethodAdapter
 	/**
 	 * Return the list of return value handlers to use including built-in and
 	 * custom handlers provided via {@link #setReturnValueHandlers}.
-	 */
-	private List<HandlerMethodReturnValueHandler> getDefaultReturnValueHandlers() {
+	 */private List<HandlerMethodReturnValueHandler> getDefaultReturnValueHandlers() {
 		List<HandlerMethodReturnValueHandler> handlers = new ArrayList<>();
 
 		// Single-purpose return value types
@@ -742,6 +741,7 @@ public class RequestMappingHandlerAdapter extends AbstractHandlerMethodAdapter
 
 		return handlers;
 	}
+
 
 
 	/**

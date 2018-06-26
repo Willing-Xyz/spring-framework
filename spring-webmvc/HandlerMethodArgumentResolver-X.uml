@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.method.support.HandlerMethodArgumentResolver</OriginalElement>
+  <nodes>
+    <node x="916.0000000000001" y="100.0">org.springframework.web.method.annotation.MapMethodProcessor</node>
+    <node x="1823.75" y="180.0">org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver</node>
+    <node x="0.0" y="100.0">org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver</node>
+    <node x="2260.25" y="260.0">org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor</node>
+    <node x="656.0000000000001" y="100.0">org.springframework.web.method.annotation.ModelAttributeMethodProcessor</node>
+    <node x="1.0" y="180.0">org.springframework.web.method.annotation.AbstractCookieValueMethodArgumentResolver</node>
+    <node x="348.5000000000001" y="180.0">org.springframework.web.servlet.mvc.method.annotation.ServletWebArgumentResolverAdapter</node>
+    <node x="1582.0" y="100.0">org.springframework.web.servlet.mvc.method.annotation.UriComponentsBuilderMethodArgumentResolver</node>
+    <node x="2032.25" y="260.0">org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor</node>
+    <node x="1115.0" y="100.0">org.springframework.web.method.annotation.ErrorsMethodArgumentResolver</node>
+    <node x="996.0000000000002" y="0.0">org.springframework.web.method.support.HandlerMethodArgumentResolver</node>
+    <node x="1372.0" y="100.0">org.springframework.web.method.annotation.ModelMethodProcessor</node>
+    <node x="636.5000000000001" y="180.0">org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor</node>
+    <node x="1935.0" y="100.0">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver</node>
+    <node x="5.5" y="260.0">org.springframework.web.servlet.mvc.method.annotation.ServletCookieValueMethodArgumentResolver</node>
+    <node x="344.0000000000001" y="100.0">org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter</node>
+    <node x="2114.75" y="180.0">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver">
+      <point x="2.2737367544323206E-13" y="-15.0" />
+      <point x="2269.75" y="155.0" />
+      <point x="2204.25" y="155.0" />
+      <point x="89.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor" target="org.springframework.web.method.annotation.ModelAttributeMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ModelMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1467.0" y="70.0" />
+      <point x="1165.8125000000002" y="70.0" />
+      <point x="46.3125" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletCookieValueMethodArgumentResolver" target="org.springframework.web.method.annotation.AbstractCookieValueMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="2136.25" y="235.0" />
+      <point x="2192.25" y="235.0" />
+      <point x="-77.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="2403.25" y="235.0" />
+      <point x="2347.25" y="235.0" />
+      <point x="77.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.MapMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1005.5000000000001" y="80.0" />
+      <point x="1104.0625000000002" y="80.0" />
+      <point x="-15.4375" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.AbstractCookieValueMethodArgumentResolver" target="org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="2114.5" y="50.0" />
+      <point x="1227.5625000000002" y="50.0" />
+      <point x="108.0625" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="482.5000000000001" y="60.0" />
+      <point x="1042.3125000000002" y="60.0" />
+      <point x="-77.1875" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.UriComponentsBuilderMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1748.5" y="60.0" />
+      <point x="1196.6875000000002" y="60.0" />
+      <point x="77.1875" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1959.25" y="155.0" />
+      <point x="2024.75" y="155.0" />
+      <point x="-89.75" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ErrorsMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="1.1368683772161603E-13" y="-15.0" />
+      <point x="1233.5000000000002" y="80.0" />
+      <point x="1134.9375000000002" y="80.0" />
+      <point x="15.4375" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="162.0" y="50.0" />
+      <point x="1011.4375000000002" y="50.0" />
+      <point x="-108.0625" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ModelAttributeMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="776.0000000000001" y="70.0" />
+      <point x="1073.1875000000002" y="70.0" />
+      <point x="-46.3125" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletWebArgumentResolverAdapter" target="org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1915.5" y="80.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

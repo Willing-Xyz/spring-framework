@@ -52,6 +52,11 @@ import org.springframework.web.servlet.HandlerMapping;
  * <p>For each registered handler method, a unique mapping is maintained with
  * subclasses defining the details of the mapping type {@code <T>}.
  *
+ * 1. 因为该类实现了InitializingBean，因此会调用afterProperties方法
+ * 	1.1 获取所有的bean，检测它们是否是Handler（通过isHandler方法，有子类实现）
+ * 	1.2 对每个Handler，检测包含的Handler method，通过getMappingForMethod方法获取（由子类实现）
+ * 	1.3 对每个Handler method，注册到MappingRegistry中
+ *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
  * @author Juergen Hoeller

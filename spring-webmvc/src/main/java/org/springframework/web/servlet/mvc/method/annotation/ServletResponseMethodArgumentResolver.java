@@ -36,6 +36,12 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * <li>{@link Writer}
  * </ul>
  *
+ * 负责解析以下参数类型：
+ *
+ * ServletResponse & HttpServletResponse
+ * OutputStream
+ * Writer
+ *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
  * @author Juergen Hoeller

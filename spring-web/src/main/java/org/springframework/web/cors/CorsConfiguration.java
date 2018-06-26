@@ -40,6 +40,8 @@ import org.springframework.util.StringUtils;
  * initialization model to start with open defaults that permit all cross-origin
  * requests for GET, HEAD, and POST requests.
  *
+ * 包含关于CORS的配置信息，不和具体的请求关联，和请求关联的是CorsConfigurationSource
+ *
  * @author Sebastien Deleuze
  * @author Rossen Stoyanchev
  * @author Juergen Hoeller

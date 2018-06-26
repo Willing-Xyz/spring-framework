@@ -48,6 +48,11 @@ import org.springframework.web.util.WebUtils;
  * if the response already contains CORS headers, or if the request is detected
  * as a same-origin one.
  *
+ * 根据CorsConfiguration，决定该请求是否允许跨域执行
+ * 1. 如果CorsConfiguration为空，会拒绝preFlight请求，不会拒绝其他请求
+ * 2. 如果响应中已经包含了cors响应，会跳过，并允许执行
+ * 3. 如果请求的origin相同，允许执行
+ *
  * @author Sebastien Deleuze
  * @author Rossen Stoyanchev
  * @since 4.2

@@ -56,6 +56,13 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * <p>A {@link WebDataBinder} is created to apply type conversion to the resolved
  * argument value if it doesn't match the method parameter type.
  *
+ * TODO 1. WebDataBinder 如何做类型转换？ 2. 如何处理placeholder & SEL？
+ *
+ * 1. 让子类创建NameValueInfo
+ * 2. 如果第一步的name为空，则使用反射获取参数名（此时需要debug模式或-parameters编译参数）
+ * 3. 让子类根据name，请求参数，参数类型获取具体的参数值
+ * 4. 如果没有获取到值，设置为默认值，如果没有默认值且是必须的参数（required为false或@Nullable标注或Optional标注），抛出异常
+ *
  * @author Arjen Poutsma
  * @author Rossen Stoyanchev
  * @author Juergen Hoeller

@@ -54,6 +54,8 @@ import javax.servlet.http.HttpServletRequest;
  *   ...
  * }</pre>
  *
+ * TODO: 谁负责解析multipart参数（RequestParamMethodArgumentResolver）并转换为String或byte[].
+ *
  * Instead of direct access, command or form controllers can register a
  * {@link org.springframework.web.multipart.support.ByteArrayMultipartFileEditor}
  * or {@link org.springframework.web.multipart.support.StringMultipartFileEditor}
