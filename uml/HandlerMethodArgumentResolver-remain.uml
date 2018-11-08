@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.method.support.HandlerMethodArgumentResolver</OriginalElement>
+  <nodes>
+    <node x="297.0" y="100.0">org.springframework.web.method.annotation.MapMethodProcessor</node>
+    <node x="2277.5" y="100.0">org.springframework.web.method.annotation.ErrorsMethodArgumentResolver</node>
+    <node x="2235.5" y="180.0">org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver</node>
+    <node x="1047.5" y="0.0">org.springframework.web.method.support.HandlerMethodArgumentResolver</node>
+    <node x="1489.0" y="260.0">org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor</node>
+    <node x="1331.0" y="100.0">org.springframework.web.method.annotation.ModelAttributeMethodProcessor</node>
+    <node x="495.9999999999999" y="100.0">org.springframework.web.method.annotation.ModelMethodProcessor</node>
+    <node x="1311.5" y="180.0">org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor</node>
+    <node x="1031.0" y="100.0">org.springframework.web.method.annotation.SessionStatusMethodArgumentResolver</node>
+    <node x="1898.5" y="100.0">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver</node>
+    <node x="4.5" y="180.0">org.springframework.web.servlet.mvc.method.annotation.ServletWebArgumentResolverAdapter</node>
+    <node x="0.0" y="100.0">org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter</node>
+    <node x="2534.5" y="100.0">org.springframework.web.servlet.mvc.method.annotation.UriComponentsBuilderMethodArgumentResolver</node>
+    <node x="1610.5" y="180.0">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor</node>
+    <node x="1940.5" y="180.0">org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.EmptyBodyCheckingHttpInputMessage</node>
+    <node x="1795.0" y="260.0">org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor</node>
+    <node x="705.9999999999999" y="100.0">org.springframework.web.servlet.mvc.method.annotation.RedirectAttributesMethodArgumentResolver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1765.5" y="155.0" />
+      <point x="1958.333333333333" y="155.0" />
+      <point x="-119.66666666666674" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="2078.0" y="70.0" />
+      <point x="1225.8888888888887" y="70.0" />
+      <point x="54.888888888888914" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor" target="org.springframework.web.method.annotation.ModelAttributeMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="138.5" y="50.0" />
+      <point x="1061.2222222222222" y="50.0" />
+      <point x="-109.77777777777783" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ModelMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="590.9999999999999" y="70.0" />
+      <point x="1116.1111111111109" y="70.0" />
+      <point x="-54.888888888888914" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.UriComponentsBuilderMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="2701.0" y="50.0" />
+      <point x="1280.7777777777778" y="50.0" />
+      <point x="109.77777777777783" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="1899.0" y="235.0" />
+      <point x="1843.0" y="235.0" />
+      <point x="77.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="1632.0" y="235.0" />
+      <point x="1688.0" y="235.0" />
+      <point x="-77.5" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="2371.0" y="155.0" />
+      <point x="2197.6666666666665" y="155.0" />
+      <point x="119.66666666666674" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ErrorsMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="2396.0" y="60.0" />
+      <point x="1253.3333333333335" y="60.0" />
+      <point x="82.33333333333348" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.MapMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="386.5" y="60.0" />
+      <point x="1088.6666666666665" y="60.0" />
+      <point x="-82.33333333333326" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.SessionStatusMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RedirectAttributesMethodArgumentResolver" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="2.2737367544323206E-13" y="-15.0" />
+      <point x="858.5000000000001" y="80.0" />
+      <point x="1143.5555555555557" y="80.0" />
+      <point x="-27.444444444444343" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation.ModelAttributeMethodProcessor" target="org.springframework.web.method.support.HandlerMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="1451.0" y="80.0" />
+      <point x="1198.4444444444443" y="80.0" />
+      <point x="27.444444444444343" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.EmptyBodyCheckingHttpInputMessage" target="org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletWebArgumentResolverAdapter" target="org.springframework.web.method.annotation.AbstractWebArgumentResolverAdapter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.041740918437286" x="1114.6758997302454" y="321.45480090841386" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

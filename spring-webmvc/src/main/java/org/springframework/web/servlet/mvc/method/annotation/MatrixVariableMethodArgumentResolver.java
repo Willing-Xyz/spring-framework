@@ -76,6 +76,7 @@ public class MatrixVariableMethodArgumentResolver extends AbstractNamedValueMeth
 	@SuppressWarnings("unchecked")
 	@Nullable
 	protected Object resolveName(String name, MethodParameter parameter, NativeWebRequest request) throws Exception {
+		// todo 什么时候设置的这个属性
 		Map<String, MultiValueMap<String, String>> pathParameters = (Map<String, MultiValueMap<String, String>>)
 				request.getAttribute(HandlerMapping.MATRIX_VARIABLES_ATTRIBUTE, RequestAttributes.SCOPE_REQUEST);
 		if (CollectionUtils.isEmpty(pathParameters)) {
