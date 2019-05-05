@@ -82,6 +82,7 @@ import javax.servlet.http.HttpServletRequest;
  * @see org.springframework.web.multipart.support.StringMultipartFileEditor
  * @see org.springframework.web.servlet.DispatcherServlet
  */
+// xreview multipart解析
 public interface MultipartResolver {
 
 	/**

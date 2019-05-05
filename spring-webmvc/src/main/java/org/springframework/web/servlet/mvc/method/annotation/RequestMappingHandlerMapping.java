@@ -172,6 +172,7 @@ public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMappi
 	 * <p>Expects a handler to have either a type-level @{@link Controller}
 	 * annotation or a type-level @{@link RequestMapping} annotation.
 	 */
+	// xreview 如果是有Controller或RequestMapping注解都可以作为HandlerMethod
 	@Override
 	protected boolean isHandler(Class<?> beanType) {
 		return (AnnotatedElementUtils.hasAnnotation(beanType, Controller.class) ||
@@ -298,6 +299,7 @@ public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMappi
 		return new RequestMatchResult(patterns.iterator().next(), lookupPath, getPathMatcher());
 	}
 
+	// xreview 处理@CrossOrigin注解
 	@Override
 	protected CorsConfiguration initCorsConfiguration(Object handler, Method method, RequestMappingInfo mappingInfo) {
 		HandlerMethod handlerMethod = createHandlerMethod(handler, method);

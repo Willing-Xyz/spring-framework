@@ -37,6 +37,7 @@ import org.springframework.web.method.support.InvocableHandlerMethod;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 执行@InitBinder标注的方法
 public class InitBinderDataBinderFactory extends DefaultDataBinderFactory {
 
 	private final List<InvocableHandlerMethod> binderMethods;

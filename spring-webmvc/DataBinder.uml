@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.validation.DataBinder</OriginalElement>
+  <nodes>
+    <node x="0.0" y="320.0">org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder</node>
+    <node x="27.0" y="240.0">org.springframework.web.bind.ServletRequestDataBinder</node>
+    <node x="269.5" y="160.0">org.springframework.web.bind.WebDataBinder</node>
+    <node x="453.0" y="240.0">org.springframework.web.bind.support.WebExchangeDataBinder</node>
+    <node x="283.0" y="80.0">org.springframework.validation.DataBinder</node>
+    <node x="337.25" y="0.0">org.springframework.beans.PropertyEditorRegistry</node>
+    <node x="184.25" y="0.0">org.springframework.beans.TypeConverter</node>
+    <node x="246.0" y="240.0">org.springframework.web.bind.support.WebRequestDataBinder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder" target="org.springframework.web.bind.ServletRequestDataBinder">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.validation.DataBinder" target="org.springframework.beans.PropertyEditorRegistry">
+      <point x="28.25" y="-15.0" />
+      <point x="367.75" y="55.0" />
+      <point x="427.25" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.ServletRequestDataBinder" target="org.springframework.web.bind.WebDataBinder">
+      <point x="0.0" y="-15.0" />
+      <point x="126.5" y="215.0" />
+      <point x="292.8333333333333" y="215.0" />
+      <point x="-46.666666666666686" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.support.WebRequestDataBinder" target="org.springframework.web.bind.WebDataBinder">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.support.WebExchangeDataBinder" target="org.springframework.web.bind.WebDataBinder">
+      <point x="0.0" y="-15.0" />
+      <point x="550.5" y="215.0" />
+      <point x="386.16666666666663" y="215.0" />
+      <point x="46.66666666666663" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.WebDataBinder" target="org.springframework.validation.DataBinder">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.validation.DataBinder" target="org.springframework.beans.TypeConverter">
+      <point x="-28.25" y="-15.0" />
+      <point x="311.25" y="55.0" />
+      <point x="250.75" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="166.5" y="55.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

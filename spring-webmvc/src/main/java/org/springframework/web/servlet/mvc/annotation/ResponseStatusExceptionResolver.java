@@ -53,6 +53,7 @@ import org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver;
  * @see ResponseStatus
  * @see ResponseStatusException
  */
+// xreview 解析ResponseStatus并返回状态码和reason
 public class ResponseStatusExceptionResolver extends AbstractHandlerExceptionResolver implements MessageSourceAware {
 
 	@Nullable

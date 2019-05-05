@@ -64,6 +64,7 @@ import org.springframework.lang.Nullable;
  * @see Errors
  * @see ValidationUtils
  */
+// xreview 验证一个对象的格式是否符合要求。
 public interface Validator {
 
 	/**

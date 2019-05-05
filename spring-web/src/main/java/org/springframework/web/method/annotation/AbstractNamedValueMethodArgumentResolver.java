@@ -61,6 +61,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 处理带name的value，如header等。它会解析SEL表达式等
 public abstract class AbstractNamedValueMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
 	@Nullable

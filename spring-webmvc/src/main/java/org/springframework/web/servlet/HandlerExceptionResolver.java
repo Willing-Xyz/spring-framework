@@ -33,6 +33,8 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @since 22.11.2003
  */
+// xreview 处理handler mapping和执行过程中出现的异常，对于view渲染产生的异常不经过这里。
+// resolveException方法可以返回null，表示没有对应的view展示。可能实现类直接写入了repsonse。
 public interface HandlerExceptionResolver {
 
 	/**
@@ -49,6 +51,7 @@ public interface HandlerExceptionResolver {
 	 * @return a corresponding {@code ModelAndView} to forward to,
 	 * or {@code null} for default processing in the resolution chain
 	 */
+	// xreview 如果返回null，则继续向下处理
 	@Nullable
 	ModelAndView resolveException(
 			HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex);

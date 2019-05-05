@@ -47,6 +47,7 @@ import org.springframework.util.Assert;
  * @author Sebastien Deleuze
  * @since 3.0
  */
+// xreview 增加是否支持MediaTypes的检测。并且自动增加Content-Type和Content-Length到输出流中
 public abstract class AbstractHttpMessageConverter<T> implements HttpMessageConverter<T> {
 
 	/** Logger available to subclasses */

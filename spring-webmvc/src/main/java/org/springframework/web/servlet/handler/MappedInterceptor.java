@@ -26,6 +26,9 @@ import org.springframework.web.context.request.WebRequestInterceptor;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+// xreview 它也是一个拦截器，但是它包含includePatterns和excludePatterns，也就是说，只有当匹配模式时，才应该调用拦截器的方法
+// 注意，它没有强制要求匹配后才允许调用，而是调用方需要自己调用matches方法判断后，决定是否调用preHandle等方法。
+// 它会先检查excludePatterns，然后检查includePatterns。
 /**
  * Contains and delegates calls to a {@link HandlerInterceptor} along with
  * include (and optionally exclude) path patterns to which the interceptor should apply.
@@ -163,6 +166,7 @@ public final class MappedInterceptor implements HandlerInterceptor {
 		return false;
 	}
 
+	// xreview 为什么不在preHandle等方法里直接调用matches方法，为什么要让外部先调用matches，然后再决定是否调用？
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {

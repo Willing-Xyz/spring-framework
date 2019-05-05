@@ -73,6 +73,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  * @since 3.1
  * @see RequestParamMapMethodArgumentResolver
  */
+// xreview 从body参数和查询参数中获取参数值
 public class RequestParamMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver
 		implements UriComponentsContributor {
 
@@ -123,6 +124,14 @@ public class RequestParamMethodArgumentResolver extends AbstractNamedValueMethod
 	 * even if not with @{@link RequestParam}.
 	 * </ul>
 	 */
+	// xreview 支持的参数类型
+	// 1. 有@RequestParam标注的参数：
+	// 		1.1 如果参数不是map，允许
+	// 		1.2 如果参数是map，注解的name/value不能为空
+	// 2. 没有@RequestParam标注的参数：
+	// 		2.1 如果参数标注了@RequestPart，不允许
+	// 		2.2 没有标注@RequestPart的MultipartFile和Part类型，包括数组，和集合
+	// 		2.3 简单类型，包括java primitive类型（包括包装类型），Enum，字符串，Number，Date，URI，URL，Locale，Class，和它们的数组
 	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
 		if (parameter.hasParameterAnnotation(RequestParam.class)) {
@@ -157,6 +166,7 @@ public class RequestParamMethodArgumentResolver extends AbstractNamedValueMethod
 		return (ann != null ? new RequestParamNamedValueInfo(ann) : new RequestParamNamedValueInfo());
 	}
 
+	// xreview todo 文件上传
 	@Override
 	@Nullable
 	protected Object resolveName(String name, MethodParameter parameter, NativeWebRequest request) throws Exception {

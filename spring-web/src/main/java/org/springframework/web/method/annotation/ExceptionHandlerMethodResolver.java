@@ -42,6 +42,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 解析标注了@ExceptionHandler的方法，然后可以通过异常获取对应的方法。
 public class ExceptionHandlerMethodResolver {
 
 	/**

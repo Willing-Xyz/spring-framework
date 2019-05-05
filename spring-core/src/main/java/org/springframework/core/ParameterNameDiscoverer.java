@@ -33,6 +33,7 @@ import org.springframework.lang.Nullable;
  * @author Adrian Colyer
  * @since 2.0
  */
+// xreview 解析方法和构造函数的参数名，比如从反射中获取，或者从注解中获取等。
 public interface ParameterNameDiscoverer {
 
 	/**

@@ -1289,6 +1289,7 @@ public class DispatcherServlet extends FrameworkServlet {
 	 * @throws ServletException if view is missing or cannot be resolved
 	 * @throws Exception if there's a problem rendering the view
 	 */
+	// xreview todo view reader流程
 	protected void render(ModelAndView mv, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		// Determine locale for request and apply it to the response.
 		Locale locale =

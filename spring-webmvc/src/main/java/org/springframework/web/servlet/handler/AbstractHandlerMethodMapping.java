@@ -183,6 +183,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	/**
 	 * Detects handler methods at initialization.
 	 */
+	// xreview 实例化后调用，检测handler方法
 	@Override
 	public void afterPropertiesSet() {
 		initHandlerMethods();
@@ -434,6 +435,7 @@ public abstract class AbstractHandlerMethodMapping<T> extends AbstractHandlerMap
 	 * @param beanType the type of the bean being checked
 	 * @return "true" if this a handler type, "false" otherwise.
 	 */
+	// xreview 子类扩展点
 	protected abstract boolean isHandler(Class<?> beanType);
 
 	/**

@@ -54,6 +54,7 @@ import org.springframework.http.HttpStatus;
  * @see org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver
  * @see javax.servlet.http.HttpServletResponse#sendError(int, String)
  */
+// xreview todo 该注解在方法上时，是由哪个类来处理的？？
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

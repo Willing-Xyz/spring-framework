@@ -19,6 +19,7 @@ package org.springframework.util;
 import java.util.Comparator;
 import java.util.Map;
 
+// url路径和模式的匹配
 /**
  * Strategy interface for {@code String}-based path matching.
  *

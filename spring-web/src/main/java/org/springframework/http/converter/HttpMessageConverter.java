@@ -31,6 +31,7 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @since 3.0
  */
+// xreview 从http请求转换数据为对象；从对象转换为http响应。
 public interface HttpMessageConverter<T> {
 
 	/**

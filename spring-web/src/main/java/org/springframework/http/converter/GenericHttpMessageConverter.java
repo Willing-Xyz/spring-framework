@@ -35,6 +35,7 @@ import org.springframework.lang.Nullable;
  * @since 3.2
  * @see org.springframework.core.ParameterizedTypeReference
  */
+// xreview 支持对泛型的转换
 public interface GenericHttpMessageConverter<T> extends HttpMessageConverter<T> {
 
 	/**

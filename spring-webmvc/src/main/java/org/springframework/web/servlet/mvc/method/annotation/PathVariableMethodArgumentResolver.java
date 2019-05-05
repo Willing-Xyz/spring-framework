@@ -62,6 +62,9 @@ import org.springframework.web.util.UriComponentsBuilder;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 从path中解析参数。
+// 1. 使用@PathVariable注解，且不是Map类型
+// 2. 如果是Map类型，注解的value不能为空
 public class PathVariableMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver
 		implements UriComponentsContributor {
 

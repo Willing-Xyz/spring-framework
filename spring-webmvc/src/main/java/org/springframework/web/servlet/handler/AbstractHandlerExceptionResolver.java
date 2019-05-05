@@ -40,6 +40,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @author Sam Brannen
  * @since 3.0
  */
+// xreview 增加handler过滤，即只支持特定的一些handler
 public abstract class AbstractHandlerExceptionResolver implements HandlerExceptionResolver, Ordered {
 
 	private static final String HEADER_CACHE_CONTROL = "Cache-Control";

@@ -57,6 +57,7 @@ import org.springframework.web.util.NestedServletException;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 写返回值到响应中，并且支持方法级@ResponseStatus
 public class ServletInvocableHandlerMethod extends InvocableHandlerMethod {
 
 	private static final Method CALLABLE_METHOD = ClassUtils.getMethod(Callable.class, "call");

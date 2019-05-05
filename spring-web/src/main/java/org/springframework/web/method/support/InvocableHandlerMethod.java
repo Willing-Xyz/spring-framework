@@ -46,6 +46,7 @@ import org.springframework.web.method.HandlerMethod;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 通过HandlerMethodArgumentResolver解析参数，并提供invokeForRequest方法执行handler
 public class InvocableHandlerMethod extends HandlerMethod {
 
 	@Nullable

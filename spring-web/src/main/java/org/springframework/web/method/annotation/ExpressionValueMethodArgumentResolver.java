@@ -39,6 +39,7 @@ import org.springframework.web.context.request.NativeWebRequest;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 解析 ${} 和SEL表达式，通过@Value注解 ，它们使用默认值作为参数值
 public class ExpressionValueMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	/**

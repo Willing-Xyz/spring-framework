@@ -48,6 +48,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  */
 public class RequestParamMapMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
+	// xreview  标注了RequestParam，但没有name/value，且参数类型是Map
 	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
 		RequestParam requestParam = parameter.getParameterAnnotation(RequestParam.class);

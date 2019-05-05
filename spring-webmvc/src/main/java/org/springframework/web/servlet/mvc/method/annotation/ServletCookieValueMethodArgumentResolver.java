@@ -35,6 +35,7 @@ import org.springframework.web.util.WebUtils;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 从cookie中解析数据。支持直接使用Cookie作为参数类型
 public class ServletCookieValueMethodArgumentResolver extends AbstractCookieValueMethodArgumentResolver {
 
 	private UrlPathHelper urlPathHelper = new UrlPathHelper();

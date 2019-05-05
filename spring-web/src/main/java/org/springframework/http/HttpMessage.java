@@ -23,6 +23,7 @@ package org.springframework.http;
  * @author Arjen Poutsma
  * @since 3.0
  */
+// xreview 表示一个http消息，可以是请求也可以是响应。具体的字段由子类定义
 public interface HttpMessage {
 
 	/**

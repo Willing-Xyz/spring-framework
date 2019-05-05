@@ -59,6 +59,7 @@ import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolv
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 解析@ResponseBody和@RequestBody
 public class RequestResponseBodyMethodProcessor extends AbstractMessageConverterMethodProcessor {
 
 	/**
@@ -130,6 +131,7 @@ public class RequestResponseBodyMethodProcessor extends AbstractMessageConverter
 		Object arg = readWithMessageConverters(webRequest, parameter, parameter.getNestedGenericParameterType());
 		String name = Conventions.getVariableNameForParameter(parameter);
 
+		// xreview todo 验证逻辑
 		if (binderFactory != null) {
 			WebDataBinder binder = binderFactory.createBinder(webRequest, arg, name);
 			if (arg != null) {

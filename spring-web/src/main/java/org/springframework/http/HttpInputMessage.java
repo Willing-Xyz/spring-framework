@@ -29,6 +29,7 @@ import java.io.InputStream;
  * @author Arjen Poutsma
  * @since 3.0
  */
+// xreview 表示http输入流，从中读取数据。在服务端，它表示客户端的请求，在客户端，它表示服务端的响应。
 public interface HttpInputMessage extends HttpMessage {
 
 	/**

@@ -844,11 +844,11 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 			throws ServletException, IOException {
 
 		HttpMethod httpMethod = HttpMethod.resolve(request.getMethod());
-		if (httpMethod == HttpMethod.PATCH || httpMethod == null) {
-			processRequest(request, response);
-		}
-		else {
-			super.service(request, response);
+			if (httpMethod == HttpMethod.PATCH || httpMethod == null) {
+				processRequest(request, response);
+			}
+			else {
+				super.service(request, response);
 		}
 	}
 

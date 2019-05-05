@@ -34,6 +34,7 @@ import org.springframework.web.method.annotation.AbstractNamedValueMethodArgumen
  * @author Rossen Stoyanchev
  * @since 4.3
  */
+// 从请求的attribute中解析参数，支持@RequestAttribute注解
 public class RequestAttributeMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	@Override

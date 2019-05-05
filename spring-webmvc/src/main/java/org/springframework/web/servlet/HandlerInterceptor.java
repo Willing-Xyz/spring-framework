@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.lang.Nullable;
 import org.springframework.web.method.HandlerMethod;
 
+// xreview interceptor作用没有filter那么强大。例如，filter可以包装request和repsonse并向下传递，但interceptor做不到。
 /**
  * Workflow interface that allows for customized handler execution chains.
  * Applications can register any number of existing or custom interceptors

@@ -66,6 +66,7 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
  * @author Juergen Hoeller
  * @since 3.1
  */
+// xreview 用HttpMessageConverter读取请求中的内容
 public abstract class AbstractMessageConverterMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
 	private static final Set<HttpMethod> SUPPORTED_METHODS =
@@ -299,6 +300,7 @@ public abstract class AbstractMessageConverterMethodArgumentResolver implements 
 	}
 
 
+	// xreview 增加hasBody方法，判断输入流中是否有内容
 	private static class EmptyBodyCheckingHttpInputMessage implements HttpInputMessage {
 
 		private final HttpHeaders headers;

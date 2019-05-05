@@ -29,6 +29,7 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @since 2.0
  */
+// xreview 当没有显示的返回viewName时，根据请求获取一个viewName
 public interface RequestToViewNameTranslator {
 
 	/**

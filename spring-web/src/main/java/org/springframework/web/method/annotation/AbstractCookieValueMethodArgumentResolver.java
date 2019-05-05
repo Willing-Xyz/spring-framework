@@ -39,6 +39,7 @@ import org.springframework.web.bind.annotation.CookieValue;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 从cookie解析值，参数使用@Cookie注解
 public abstract class AbstractCookieValueMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	/**

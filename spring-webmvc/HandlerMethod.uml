@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.method.HandlerMethod</OriginalElement>
+  <nodes>
+    <node x="47.5" y="0.0">org.springframework.web.method.HandlerMethod</node>
+    <node x="0.0" y="160.0">org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod</node>
+    <node x="19.5" y="80.0">org.springframework.web.method.support.InvocableHandlerMethod</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod" target="org.springframework.web.method.support.InvocableHandlerMethod">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.web.method.support.InvocableHandlerMethod" target="org.springframework.web.method.HandlerMethod">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="70.0" y="15.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

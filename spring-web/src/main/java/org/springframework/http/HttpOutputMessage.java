@@ -29,6 +29,7 @@ import java.io.OutputStream;
  * @author Arjen Poutsma
  * @since 3.0
  */
+// xreview 表示http输出流，向里写入数据。在服务端，表示写入到客户端的响应。在客户端，表示对服务端的请求。
 public interface HttpOutputMessage extends HttpMessage {
 
 	/**

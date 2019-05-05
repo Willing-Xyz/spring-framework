@@ -40,6 +40,7 @@ import org.springframework.util.StreamUtils;
  * @author Juergen Hoeller
  * @since 3.0
  */
+// xreview 支持String类型，直接从输入流中读取为string，向输入流中写入string
 public class StringHttpMessageConverter extends AbstractHttpMessageConverter<String> {
 
 	public static final Charset DEFAULT_CHARSET = StandardCharsets.ISO_8859_1;

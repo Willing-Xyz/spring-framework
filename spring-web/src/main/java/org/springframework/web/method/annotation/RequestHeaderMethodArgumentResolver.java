@@ -43,6 +43,7 @@ import org.springframework.web.context.request.NativeWebRequest;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 从请求头中获取参数，解析@RequestHeader注解，且参数类型不是Map
 public class RequestHeaderMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	/**

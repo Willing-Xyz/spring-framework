@@ -45,6 +45,10 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.util.UrlPathHelper;
 
+// xreview todo 1. cors 2. cors为什么需要跨越这么多组件？
+// xreview 因为继承子WebApplicationObjectSupport，因此，实例化之后会调用initApplicationContext
+// 它会自动检测容器中的MappedInterceptor实例，并作为拦截器
+// 也会包装HandlerExecutionChain，使它能够处理cors（通过增加拦截器）
 /**
  * Abstract base class for {@link org.springframework.web.servlet.HandlerMapping}
  * implementations. Supports ordering, a default handler, handler interceptors,
@@ -178,6 +182,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * @see org.springframework.web.servlet.HandlerInterceptor
 	 * @see org.springframework.web.context.request.WebRequestInterceptor
 	 */
+	// xreview question 这个方法的作用是什么？设置了之后，它并没有添加到mappedInterceptors中啊？
 	public void setInterceptors(Object... interceptors) {
 		this.interceptors.addAll(Arrays.asList(interceptors));
 	}
@@ -253,6 +258,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * @param interceptors the configured interceptor List (never {@code null}), allowing
 	 * to add further interceptors before as well as after the existing interceptors
 	 */
+	// xreview 提供给子类增加interceptor的机会
 	protected void extendInterceptors(List<Object> interceptors) {
 	}
 
@@ -344,6 +350,8 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * @return the corresponding handler instance, or the default handler
 	 * @see #getHandlerInternal
 	 */
+	// xreview 1. 调用getHandlerInternal要求子类返回handler，如果返回null，则使用默认handler，如果没有默认handler，返回null。
+	// 注意，getHandlerInternal返回的handler也可以是HandlerExecutionChain实例
 	@Override
 	@Nullable
 	public final HandlerExecutionChain getHandler(HttpServletRequest request) throws Exception {
@@ -361,6 +369,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 		}
 
 		HandlerExecutionChain executionChain = getHandlerExecutionChain(handler, request);
+		// xreview 包装HandlerExecutionChain，使其应用cors拦截器
 		if (CorsUtils.isCorsRequest(request)) {
 			CorsConfiguration globalConfig = this.globalCorsConfigSource.getCorsConfiguration(request);
 			CorsConfiguration handlerConfig = getCorsConfiguration(handler, request);
@@ -386,6 +395,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	 * @return the corresponding handler instance, or {@code null} if none found
 	 * @throws Exception if there is an internal error
 	 */
+	// xreview 子类扩展点
 	@Nullable
 	protected abstract Object getHandlerInternal(HttpServletRequest request) throws Exception;
 

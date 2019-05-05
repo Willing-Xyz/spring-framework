@@ -56,6 +56,7 @@ import org.springframework.util.ClassUtils;
  * @since 2.0
  * @see org.springframework.core.annotation.SynthesizingMethodParameter
  */
+// xreview 封装了方法参数，便于访问方法参数相关信息
 public class MethodParameter {
 
 	private static final Annotation[] EMPTY_ANNOTATION_ARRAY = new Annotation[0];

@@ -42,6 +42,7 @@ import org.springframework.web.util.WebUtils;
  * @since 22.11.2003
  * @see org.springframework.web.servlet.DispatcherServlet
  */
+// xreview 不看，太老了，用不到
 public class SimpleMappingExceptionResolver extends AbstractHandlerExceptionResolver {
 
 	/** The default name of the exception attribute: "exception". */

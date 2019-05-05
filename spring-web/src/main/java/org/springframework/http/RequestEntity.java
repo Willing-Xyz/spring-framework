@@ -63,6 +63,7 @@ import org.springframework.util.ObjectUtils;
  * @see #getMethod()
  * @see #getUrl()
  */
+// xreview http请求，支持以对象的方式表示。
 public class RequestEntity<T> extends HttpEntity<T> {
 
 	@Nullable

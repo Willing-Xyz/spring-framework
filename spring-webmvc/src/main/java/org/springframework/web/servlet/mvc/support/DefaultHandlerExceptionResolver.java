@@ -139,6 +139,7 @@ import org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver;
  * @since 3.0
  * @see org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler
  */
+// xreview 把对应的异常转换为状态码
 public class DefaultHandlerExceptionResolver extends AbstractHandlerExceptionResolver {
 
 	/**

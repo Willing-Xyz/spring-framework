@@ -54,6 +54,7 @@ import org.springframework.util.ObjectUtils;
  * @see #getBody()
  * @see #getHeaders()
  */
+// xreview 表示请求或响应。支持以对象的方式表示，而不是输入输出流
 public class HttpEntity<T> {
 
 	/**

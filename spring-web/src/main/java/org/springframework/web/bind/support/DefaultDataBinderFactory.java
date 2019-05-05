@@ -27,6 +27,7 @@ import org.springframework.web.context.request.NativeWebRequest;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 创建WebRequestDataBinder并调用WebBindingInitializer的initBinder
 public class DefaultDataBinderFactory implements WebDataBinderFactory {
 
 	@Nullable

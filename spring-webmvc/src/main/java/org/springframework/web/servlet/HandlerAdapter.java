@@ -47,6 +47,7 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter
  * @see org.springframework.web.servlet.handler.SimpleServletHandlerAdapter
  */
+// xreview handlerAdapter用于调用Handler，因为handler是object类型，而且不需要实现特定的接口，因此需要handlerAdapter来调用
 public interface HandlerAdapter {
 
 	/**

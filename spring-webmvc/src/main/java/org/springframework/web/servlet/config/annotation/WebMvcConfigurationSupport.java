@@ -271,6 +271,7 @@ public class WebMvcConfigurationSupport implements ApplicationContextAware, Serv
 	}
 
 
+	// xreview 返回RequestMappingHandlerMapping实例
 	/**
 	 * Return a {@link RequestMappingHandlerMapping} ordered at 0 for mapping
 	 * requests to annotated controllers.

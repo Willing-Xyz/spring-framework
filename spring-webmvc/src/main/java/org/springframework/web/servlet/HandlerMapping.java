@@ -20,6 +20,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.lang.Nullable;
 
+// xreview 查找能够处理指定请求的Handler 和 相关的拦截器 （也就是HandlerExecutionChain）
+// 注意，handler是Object类型，因此需要Adapter来调用
 /**
  * Interface to be implemented by objects that define a mapping between
  * requests and handler objects.

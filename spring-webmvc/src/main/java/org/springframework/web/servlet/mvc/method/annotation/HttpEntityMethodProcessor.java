@@ -67,6 +67,7 @@ import org.springframework.web.servlet.support.RequestContextUtils;
  * @author Brian Clozel
  * @since 3.1
  */
+// xreview 处理ResponseEntity/RequestEntity/HttpEntity
 public class HttpEntityMethodProcessor extends AbstractMessageConverterMethodProcessor {
 
 	private static final Set<HttpMethod> SAFE_METHODS = EnumSet.of(HttpMethod.GET, HttpMethod.HEAD);

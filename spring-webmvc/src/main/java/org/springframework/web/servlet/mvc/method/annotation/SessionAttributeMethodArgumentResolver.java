@@ -34,6 +34,7 @@ import org.springframework.web.method.annotation.AbstractNamedValueMethodArgumen
  * @author Rossen Stoyanchev
  * @since 4.3
  */
+// xreview 从session中获取数据，使用@SessionAttribute注解
 public class SessionAttributeMethodArgumentResolver extends AbstractNamedValueMethodArgumentResolver {
 
 	@Override

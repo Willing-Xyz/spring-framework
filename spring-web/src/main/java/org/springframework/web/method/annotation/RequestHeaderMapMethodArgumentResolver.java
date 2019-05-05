@@ -44,6 +44,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
  * @author Rossen Stoyanchev
  * @since 3.1
  */
+// xreview 参数使用@RequestHeader注解，且参数类型是Map。因为Headers继承Map，因此也可以作为参数类型使用
 public class RequestHeaderMapMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
 	@Override

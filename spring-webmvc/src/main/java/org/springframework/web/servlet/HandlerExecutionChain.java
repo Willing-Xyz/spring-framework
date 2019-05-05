@@ -28,6 +28,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 
+// xreview 包含了handler和interceptors，且包含触发调用interceptors的方法。
 /**
  * Handler execution chain, consisting of handler object and any handler interceptors.
  * Returned by HandlerMapping's {@link HandlerMapping#getHandler} method.
@@ -121,7 +122,7 @@ public class HandlerExecutionChain {
 		return this.interceptors;
 	}
 
-
+	// xreview 如果返回true，表示继续由handler处理，否则，表示interceptor自己已经处理了，直接返回客户端即可。
 	/**
 	 * Apply preHandle methods of registered interceptors.
 	 * @return {@code true} if the execution chain should proceed with the
@@ -168,6 +169,7 @@ public class HandlerExecutionChain {
 
 		HandlerInterceptor[] interceptors = getInterceptors();
 		if (!ObjectUtils.isEmpty(interceptors)) {
+			// xreview interceptorIndex用于记录preHandle处理到的位置，如A-B-C，如果处理B时，B的preHandle返回false，那么，只会调用B和A的afterCompletion，不会调用C的。
 			for (int i = this.interceptorIndex; i >= 0; i--) {
 				HandlerInterceptor interceptor = interceptors[i];
 				try {
@@ -183,6 +185,7 @@ public class HandlerExecutionChain {
 	/**
 	 * Apply afterConcurrentHandlerStarted callback on mapped AsyncHandlerInterceptors.
 	 */
+	// xreview todo async
 	void applyAfterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response) {
 		HandlerInterceptor[] interceptors = getInterceptors();
 		if (!ObjectUtils.isEmpty(interceptors)) {

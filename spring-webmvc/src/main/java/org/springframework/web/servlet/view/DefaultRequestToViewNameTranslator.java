@@ -54,6 +54,7 @@ import org.springframework.web.util.UrlPathHelper;
  * @see org.springframework.web.servlet.RequestToViewNameTranslator
  * @see org.springframework.web.servlet.ViewResolver
  */
+// xreview 根据url解析出默认的viewName
 public class DefaultRequestToViewNameTranslator implements RequestToViewNameTranslator {
 
 	private static final String SLASH = "/";

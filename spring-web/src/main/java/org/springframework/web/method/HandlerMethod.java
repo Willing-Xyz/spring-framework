@@ -34,6 +34,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+// xreview 以方法作为handler，该类是它的一个封装
 /**
  * Encapsulates information about a handler method consisting of a
  * {@linkplain #getMethod() method} and a {@linkplain #getBean() bean}.
@@ -89,6 +90,7 @@ public class HandlerMethod {
 		this.beanFactory = null;
 		this.beanType = ClassUtils.getUserClass(bean);
 		this.method = method;
+		// xreview 要考虑bridge方法
 		this.bridgedMethod = BridgeMethodResolver.findBridgedMethod(method);
 		this.parameters = initMethodParameters();
 		evaluateResponseStatus();
